@@ -1,0 +1,11 @@
+import requests
+
+data = {
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3947.100 Safari/537.36',
+    'cookie': '__51cke__=; __51uvsct__JFGdTuLLGeB1FLjg=1; __51vcke__JFGdTuLLGeB1FLjg=5102bdd4-1fab-5174-ae09-c00d65f23f26; __51vuft__JFGdTuLLGeB1FLjg=1628211838285; __tins__21020775=%7B%22sid%22%3A%201628211838242%2C%20%22vd%22%3A%202%2C%20%22expires%22%3A%201628213656321%7D; __51laig__=2; __vtins__JFGdTuLLGeB1FLjg=%7B%22sid%22%3A%20%228e5a04ef-d938-5adb-9c7a-70f422d8e5ae%22%2C%20%22vd%22%3A%202%2C%20%22stt%22%3A%2018066%2C%20%22dr%22%3A%2018066%2C%20%22expires%22%3A%201628213656341%2C%20%22ct%22%3A%201628211856341%7D; _aihecong_chat_visitorCookie=%7B%22visitormark%22%3A%7B%22addtime%22%3A%222021-08-06T01%3A03%3A59.742Z%22%2C%22address%22%3A%7B%22city%22%3A%22%E9%83%91%E5%B7%9E%22%2C%22region%22%3A%22%E6%B2%B3%E5%8D%97%22%2C%22country%22%3A%22%E4%B8%AD%E5%9B%BD%22%7D%2C%22device%22%3A%7B%22ip%22%3A%22115.57.135.76%22%2C%22height%22%3A%221080%22%2C%22width%22%3A%221920%22%2C%22system%22%3A%22Win10%22%2C%22browser%22%3A%22Chrome%2069.0.3947.100%22%2C%22type%22%3A%22Desktop%22%7D%2C%22utm%22%3A%7B%7D%2C%22mark%22%3A%7B%22sourceType%22%3A%22DirectEntry%22%2C%22entranceTitle%22%3A%22Q%E7%BB%91%E5%9C%A8%E7%BA%BF%E6%9F%A5%E8%AF%A2%22%2C%22entranceUrl%22%3A%22https%3A%2F%2Fsgk.xyz%2F%22%2C%22source%22%3A%22DirectEntry%22%7D%2C%22stays%22%3A%7B%7D%2C%22curFrequency%22%3A1%2C%22pageDepth%22%3A0%2C%22stayDuration%22%3A0%2C%22_id%22%3A%22610c8a7f3fe5fc2d56c0eb80%22%2C%22lasttime%22%3A%222021-08-06T01%3A03%3A59.672Z%22%2C%22channelId%22%3A%223Jho1R%22%2C%22numberId%22%3A39136%2C%22visitorId%22%3A%22610c8a7f3fe5fc2d56c0eb7d%22%2C%22__v%22%3A0%7D%2C%22last%22%3A%7B%22time%22%3A1628211839926%2C%22source%22%3A%22DirectEntry%22%2C%22entranceUrl%22%3A%22https%3A%2F%2Fsgk.xyz%2F%22%2C%22entranceTitle%22%3A%22Q%E7%BB%91%E5%9C%A8%E7%BA%BF%E6%9F%A5%E8%AF%A2%22%2C%22keyWord%22%3Anull%7D%2C%22visitormarkId%22%3A%22610c8a7f3fe5fc2d56c0eb80%22%2C%22visitorId%22%3A%22610c8a7f3fe5fc2d56c0eb7d%22%2C%22lastTime%22%3A1628211859307%7D'
+}
+# qq = input("请输入要查询的QQ号：")
+requests.packages.urllib3.disable_warnings()
+url = "https://sgk.xyz/qbtxt-api.php?qq=361824263"
+res = requests.get(url, headers=data)
+print(res.content.decode())

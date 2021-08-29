@@ -1,0 +1,10 @@
+def search(lst,num,lower=0,upper=None):
+    if upper is None:
+        upper = len(lst)-1
+    middle = (lower + upper) // 2
+    if num == lst[middle]:
+        return middle,lst[middle]
+    elif num < lst[middle]:
+        return search(lst,num,lower,middle)
+    else:
+        return search(lst,num,middle+1,upper)
