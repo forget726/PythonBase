@@ -1,4 +1,4 @@
-#切片操作，自定义函数实现trim去空操作
+# 切片操作，自定义函数实现trim去空操作
 '''
 def trim(s):
     if(s==None or s == ''):
@@ -10,9 +10,10 @@ def trim(s):
     while(s[-1:] == ' ' ):
         s = s[:-1]
     return s'''
-#上面网上复制例子，加入了非空和无效判断，下面自己写的没加也正常！
-def trim(s):
 
+
+# 上面网上复制例子，加入了非空和无效判断，下面自己写的没加也正常！
+def trim(s):
     while (s[:1] == ' '):
         s = s[1:]
     while (s[-1:] == ' '):
@@ -53,16 +54,15 @@ else:
 
 d = {'a': 1, 'b': 2, 'c': 3}
 
-#格式化参数复习 format方式
+# 格式化参数复习 format方式
 for k, v in d.items():
-    print('这个dict中{0}对应的元素为：{1}'.format(k,v))
+    print('这个dict中{0}对应的元素为：{1}'.format(k, v))
 
-
-#格式化参数复习 %方式
+# 格式化参数复习 %方式
 for i, value in enumerate(['A', 'B', 'C']):
     print('该list中第%s位的元素为：%s' % (i, value))
 
-#格式化参数复习 f-string方式
+# 格式化参数复习 f-string方式
 
 for i, value in enumerate(['A', 'B', 'C']):
     print(f'该list1中第{i}位的元素为：{value}')

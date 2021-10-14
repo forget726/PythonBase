@@ -1,11 +1,3 @@
-#  Copyright (c) 2021. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-#  Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
-#  Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
-#  Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
-#  Vestibulum commodo. Ut rhoncus gravida arcu.
-
-import random
-
 pass  # 输出60行时候数据出问题
 # with open("ip.txt", "w+", encoding="utf8") as f:
 #     for i in range(1, 61):
@@ -35,5 +27,4 @@ pass  # 输出60行时候数据出问题
 #             content[n] = "哈哈哈哈\n"
 #     print(content)
 #     f.writelines(content)
-
 
